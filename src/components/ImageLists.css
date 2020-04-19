@@ -1,0 +1,18 @@
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1px 0px;
+  grid-auto-rows: 10px; 
+}
+
+.image-list img {
+  height: 220px;
+  width: 250px;
+  grid-row-end: span 2;
+}
+
+/* grid-auto-rows - height of rows */
+/* grid-gap - gap between each row */
+/* grid-template-columns - how many columns */
+/* grid-row-end - number of columns each image allocated remove height and check */
+/* style={{gridRowEnd: `span ${this.state.span}`}} */
